@@ -38,8 +38,7 @@ if [[ \${EUID} == 0 ]] ; then
        fi
 " >> /etc/bash.bashrc
 
-echo -e "\"
-#################################
+echo -e "\#################################
 \"# Confirugrações personalizadas #
 \"#################################
 set number
@@ -60,4 +59,3 @@ syntax on
 #################################################
 touch /root/.bash_history
 chattr +a /root/.bash_history
-
