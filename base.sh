@@ -38,9 +38,9 @@ if [[ \${EUID} == 0 ]] ; then
        fi
 " >> /etc/bash.bashrc
 
-echo -e "\#################################
-\"# Confirugrações personalizadas #
-\"#################################
+echo -e "\##########################
+\"# Vim personalized confs #
+\"##########################
 set number
 set bg=dark
 set nocp
@@ -54,8 +54,8 @@ set nobomb
 syntax on
 " >> /etc/vim/vimrc
 
-#################################################
-# Adiciona a senha nos usuários administrativos #
-#################################################
+###########################
+# root history protection #
+###########################
 touch /root/.bash_history
 chattr +a /root/.bash_history
