@@ -38,21 +38,24 @@ if [[ \${EUID} == 0 ]] ; then
        fi
 " >> /etc/bash.bashrc
 
-echo -e "\##########################
-\"# Vim personalized confs #
-\"##########################
-set number
-set bg=dark
-set nocp
-set smartcase
-set showcmd
-set showmatch
-set ignorecase
-set incsearch
-set hidden
-set nobomb
-syntax on
-" >> /etc/vim/vimrc
+
+if [-f /usr/bin/vim ] ; then
+       echo -e "\##########################
+       \"# Vim personalized confs #
+       \"##########################
+       set number
+       set bg=dark
+       set nocp
+       set smartcase
+       set showcmd
+       set showmatch
+       set ignorecase
+       set incsearch
+       set hidden
+       set nobomb
+       syntax on
+       " >> /etc/vim/vimrc
+fi
 
 ###########################
 # root history protection #
