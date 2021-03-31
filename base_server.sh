@@ -6,7 +6,9 @@ apt-get dist-upgrade -y
 ###################
 # Pacotes Básicos #
 ###################
-apt-get install gnupg git locate python-pip fail2ban mcrypt mlocate inotify-tools telnet htop iptraf iftop tcpdump iptables vim ntp zip unzip byobu ssh postfix elinks mailutils sed chkrootkit rkhunter tzdata ntpdate sudo rsync apt-listchanges iotop nfs-common nload smartmontools -y 
+apt-get install gnupg git locate python-pip fail2ban mcrypt mlocate inotify-tools telnet htop iptraf iftop tcpdump iptables \
+vim ntp zip unzip byobu ssh postfix elinks mailutils sed chkrootkit rkhunter tzdata ntpdate sudo rsync apt-listchanges \
+iotop nfs-common nload smartmontools -y 
 
 echo "cron.*                          /var/log/cron.log"  >> /etc/rsyslog.conf
 service rsyslog restart
