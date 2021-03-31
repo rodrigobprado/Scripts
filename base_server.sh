@@ -214,8 +214,6 @@ echo -e "
 *\t	*\t	*\t	*\t	*\t	root\t	/root/monitor-df.sh  >/dev/null 2>&1
 " >> /etc/crontab
 
-adduser --force-badname prado.rodrigo
-
 groupadd prado.rodrigo
 useradd -g 0 -G 'prado.rodrigo' -c "Rodrigo Prado" -s /bin/bash deploy -d /home/prado.rodrigo
 adduser prado.rodrigo sudo
@@ -230,5 +228,3 @@ chown -R prado.rodrigo:prado.rodrigo /home/prado.rodrigo/
 chattr +i /home/prado.rodrigo/.ssh/authorized_keys
 touch /home/prado.rodrigo/.bash_history
 chattr +a /home/prado.rodrigo/.bash_history
-
-
